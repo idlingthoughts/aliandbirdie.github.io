@@ -1,0 +1,25 @@
+---
+title: "Ali & Birdie"
+layout: default
+pagination:
+    enabled: true
+description: "Ali meets birdie"
+---
+{%- comment -%} <section class="intro">
+    <div class="wrap">
+        <h1>{{site.title}}</h1>
+        <p>{{site.subtitle}}</p>
+    </div>
+</section> {%- endcomment -%}
+<div class="page-loader"></div>
+<div class="page">
+    <div class="page__content" data-page-title="{{site.title}}">
+        <section class="portfolio">
+            <div class="content-wrap portfolio-wrap" style="position: relative;">
+		        {% for post in paginator.posts %}
+		            {% include portfolio_item.html %}
+            	{% endfor %}
+            </div>
+        </section>
+    </div>
+</div>

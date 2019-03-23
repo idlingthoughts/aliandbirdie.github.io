@@ -1,0 +1,62 @@
+# Site
+name: 'Polar Opposites'
+description: 'A journey of heart and mind'
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/favicon.ico'
+baseurl: ''
+domainurl: ''
+images: '/images'
+cimages: '/cimages'
+title: 'Polar Opposites'
+subtitle: 'Ali meets Birdie'
+include: ["_pages"]
+permalink: /:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+authors:
+    ali:
+      name:           Ali
+      avatar:         /images/ali_avatar.jpg
+      bio:            "Hey, Ali here with all the birdie talk ;)"
+      email:          tgilani@live.com
+      twitter:        https://twitter.com/atastrophic
+
+    birdie:
+      name:           Sibgha
+      avatar:         /images/birdie_avatar.jpg
+      bio:            "Doctor, fashionista, love to explore new ideas and write on my morning coffee!"
+      email:          fakemail@gmail.com
+      twitter:        https://twitter.com/wowthemesnet
+
+# Defaults
+defaults:
+
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+
+# Syntax
+markdown: kramdown
+highlighter: rouge
+
+# Paginate
+paginate: 10
+
+
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
