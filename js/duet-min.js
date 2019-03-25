@@ -4670,7 +4670,7 @@
 			$('body').addClass('loading'),
 				$('.page-loader').load(s.hash + ' .page__content', function() {
 					$('body, html').animate({ scrollTop: 0 }, 300);
-					var n = 400;
+					var n = 1;
 					setTimeout(function() {
 						$('.page .page__content').remove(),
 							$('.page-loader .page__content').appendTo('.page'),

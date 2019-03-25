@@ -6,7 +6,6 @@ favicon: 'assets/images/favicon.ico'
 baseurl: ''
 domainurl: ''
 images: '/images'
-cimages: '/cimages'
 title: 'Polar Opposites'
 subtitle: 'Ali meets Birdie'
 include: ["_pages"]

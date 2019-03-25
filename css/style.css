@@ -1541,7 +1541,7 @@ section {
     .single p,
     .single ul,
     .single ol {
-        max-width: 60%
+        max-width: 70%
     }
 }
 
@@ -1570,7 +1570,7 @@ section {
 
 @media only screen and (min-width: 1220px) {
     .single hr {
-        max-width: 60%
+        max-width: 70%
     }
 }
 
@@ -1634,7 +1634,7 @@ section {
     .single .highlighter-rouge,
     .single table {
         margin: 40px auto;
-        max-width: 60%
+        max-width: 70%
     }
 }
 
